@@ -1,10 +1,201 @@
-body{
-  font-family: 'Poppins', sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins",sans-serif;
 }
-h1{
-  background-color: aqua;
+
+
+.background-image-header{
+  background-image: url("images/header-bg.png");
+  background-repeat: no-repeat;
+  height: 1000px;
 }
-p{
+
+.container{
+  max-width: 1700px;
+  margin: auto;
+}
+@media screen and (max-width:900px) {
+  .container {
+    max-width: 700px;
+  }
+  .image-area img{
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .container{
+    max-width: 400px;
+  }
+  
+  .text-area:first-child{
+    max-width: 100%;
+    margin-bottom: 50px;
+  
+  }
+  
+  .text-area img{
+    max-width:50%;
+  }
+
+  .image-area img{
+    max-width: 100%;
+  }
+
+  .text-area:last-child{
+    max-width: 100%;
+  }
+  .text-section{
+    max-width: 100%;
+  }
+
+
+}
+
+.text-area h2{
+  font-weight: 400;
+  font-size: 35px;
+  margin-top: 20%;
+}
+
+.text-area h1{
+  color: rgb(233, 55, 114);
+  font-size: 43px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.text-area p{
+  color: grey;
+  margin: 50px 0px;
+  
+}
+.text-area a{
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background-image: linear-gradient(45deg, rgb(233, 101, 123),rgb(233, 55, 114));
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 2px 9px black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 1s;
+  
+}
+
+
+.text-area{
+  max-width: 40%;
+  float: left;
+}
+.text-area img{
+  width: 100%;
+  margin-left: 20%;
+}
+
+
+.background-image-biography{
+  background-image: url("images/biography-bg.png");
+  background-repeat: no-repeat;
+  height: 900px;
+}
+
+.image-area {
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+} 
+
+.background-image-mlw{
+  background-image: url("images/latest-work-bg.png");
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.center-text h2{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  margin: 3%;
+}
+.work-area{
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-1{
+  width: 30%;
+  transition: 1s;
+  box-shadow: 0px 1px 15px 0px black;
+
+}
+.work-1:hover{
+  transform: scale(1.1);
+}
+.work-1 img{
+  width: 100%;
+}
+
+.background-image-footer{
+  background-image: url("images/footer-bg.png");
+  height: 700px;
+}
+.text-section{
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.text-section h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.text-section h4{
   font-size: 20px;
-  color: blueviolet;
+  font-weight: 500;
+  color: rgb(99, 91, 91);
+  margin: 15px 0px;
 }
+
+.text-section p{
+  font-size: 20px;
+  margin:10% 0px;
+}
+
+.email{
+  margin: auto;
+  width: 80%;
+  height: 200px;
+  text-align: center;
+  background-image: linear-gradient(45deg,#EC4E88,#ED4B70);
+  border-radius: 20px;
+}
+
+.email p{
+  color: white;
+  font-size: 20px;
+  padding: 45px 0px 20px 0px;
+}
+
+.email a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.copyright-section{
+  margin: 5% 0%;
+}
+
+.copyright-section p{
+  text-align: center;
+  color: rgb(112, 111, 111);
+}
+
